@@ -11,7 +11,7 @@ export default function SSRPage({ serverData }) {
       const data = await res.json();
       // setClientData(data);
 
-      // Simulate delay
+      // Simulate delay to show the difference
       setTimeout(() => {
         setClientData(data);
       }, 3000); // 3 seconds delay
