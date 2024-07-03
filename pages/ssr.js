@@ -9,12 +9,12 @@ export default function SSRPage({ serverData }) {
     async function fetchClientData() {
       const res = await fetch('/api/client-data');
       const data = await res.json();
-      setClientData(data);
+      // setClientData(data);
 
       // Simulate delay
-    //   setTimeout(() => {
-    //     setClientData(data);
-    //   }, 3000); // 3 seconds delay
+      setTimeout(() => {
+        setClientData(data);
+      }, 3000); // 3 seconds delay
     }
     
 
