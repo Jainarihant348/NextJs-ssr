@@ -14,6 +14,7 @@ export default function SSRPage({ serverData }) {
       // Simulate delay to show the difference
       setTimeout(() => {
         setClientData(data);
+        
       }, 4000); // 3 seconds delay
     }
     
